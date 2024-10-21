@@ -1,0 +1,3 @@
+{"nombre":"Cristiano","descripcion":"aaaaaaaa","numero_serie":"123456","estado":"activo","prioridad":"media"}
+{"nombre":"Cristiano","descripcion":"aaaaaaaa","numero_serie":"123456","estado":"activo","prioridad":"media"}
+{"nombre":"Pablo","descripcion":"Hola mundo","numero_serie":"7654","estado":"activo","prioridad":"alta"}
