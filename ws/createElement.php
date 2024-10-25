@@ -2,7 +2,7 @@
 require_once __DIR__ . '/interfaces/IToJson.php';
 require_once __DIR__ . '/models/Element.php';
 
-use Models\Element;
+use models\Element;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = $_POST['nombre'] ?? '';

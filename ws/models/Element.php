@@ -10,7 +10,7 @@ class Element implements IToJson {
     private $estado;
     private $prioridad;
 
-    // Constructor
+    
     public function __construct($nombre, $descripcion, $numero_serie, $estado, $prioridad) {
         $this->nombre = $nombre;
         $this->descripcion = $descripcion;
@@ -19,7 +19,7 @@ class Element implements IToJson {
         $this->prioridad = $prioridad;
     }
 
-    // Getters
+    
     public function getNombre() {
         return $this->nombre;
     }
@@ -40,7 +40,7 @@ class Element implements IToJson {
         return $this->prioridad;
     }
 
-    // Setters
+    
     public function setNombre($nombre) {
         $this->nombre = $nombre;
     }
@@ -61,7 +61,7 @@ class Element implements IToJson {
         $this->prioridad = $prioridad;
     }
 
-    // Implementación del método toJson()
+    
     public function toJson() {
         return json_encode([
             'nombre' => $this->nombre,
