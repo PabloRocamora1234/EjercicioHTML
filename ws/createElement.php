@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/interfaces/IToJson.php';
+require_once __DIR__ . '/interfaces/ITOJSON.php';
 require_once __DIR__ . '/models/Element.php';
 
 use models\Element;

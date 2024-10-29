@@ -1,7 +1,8 @@
 <?php
 namespace Models;
 
-use Interfaces\IToJson;
+use Interfaces\ITOJSON;
+require_once 'interfaces/ITOJSON.php';
 
 class Element implements IToJson {
     private $nombre;
