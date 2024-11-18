@@ -1,26 +1,24 @@
 <?php
-namespace Models;
+namespace models;
 
-use Interfaces\ITOJSON;
+use interfaces\ITOJSON;
 require_once 'interfaces/ITOJSON.php';
 
 class Element implements IToJson {
     private $nombre;
     private $descripcion;
-    private $numero_serie;
+    private $nserie;
     private $estado;
     private $prioridad;
 
-    
-    public function __construct($nombre, $descripcion, $numero_serie, $estado, $prioridad) {
+    public function __construct($nombre, $descripcion, $nserie, $estado, $prioridad) {
         $this->nombre = $nombre;
         $this->descripcion = $descripcion;
-        $this->numero_serie = $numero_serie;
+        $this->nserie = $nserie;
         $this->estado = $estado;
         $this->prioridad = $prioridad;
     }
 
-    
     public function getNombre() {
         return $this->nombre;
     }
@@ -30,7 +28,7 @@ class Element implements IToJson {
     }
 
     public function getNumeroSerie() {
-        return $this->numero_serie;
+        return $this->nserie;
     }
 
     public function getEstado() {
@@ -41,7 +39,6 @@ class Element implements IToJson {
         return $this->prioridad;
     }
 
-    
     public function setNombre($nombre) {
         $this->nombre = $nombre;
     }
@@ -50,8 +47,8 @@ class Element implements IToJson {
         $this->descripcion = $descripcion;
     }
 
-    public function setNumeroSerie($numero_serie) {
-        $this->numero_serie = $numero_serie;
+    public function setNumeroSerie($nserie) {
+        $this->nserie = $nserie;    
     }
 
     public function setEstado($estado) {
@@ -62,15 +59,13 @@ class Element implements IToJson {
         $this->prioridad = $prioridad;
     }
 
-    
     public function toJson() {
         return json_encode([
             'nombre' => $this->nombre,
             'descripcion' => $this->descripcion,
-            'numero_serie' => $this->numero_serie,
+            'nserie' => $this->nserie,
             'estado' => $this->estado,
             'prioridad' => $this->prioridad
         ]);
     }
 }
-?>
